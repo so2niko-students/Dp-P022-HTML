@@ -1,0 +1,23 @@
+@import "king.css";
+
+.row{
+    font-size: 0;
+}
+
+.dots{
+
+    background-color: cornsilk;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    border: 2px solid transparent;
+    transition: 1s border-color;
+}
+
+.dots:hover{
+    border-color: greenyellow;
+}
+
+.bl{
+    background-color: brown;
+}
