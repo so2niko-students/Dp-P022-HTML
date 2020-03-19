@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer,main,header{
+    width: 1000px;
+}
+main{
+    background-color: red;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: darkmagenta;
+    height: 100px;
+}
+footer{
+    background-color: darkorange;
+    height: 200px;
+}
+section{
+    border: 1px solid black;
+    padding: 15px;
+    flex-grow: 1;
+}

@@ -1,0 +1,1 @@
+inpRange.oninput = ()=>inpNum.value = inpRange.value;

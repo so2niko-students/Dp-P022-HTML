@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header,footer{
+    height: 100px;
+    background-color: aquamarine;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    background-color: crimson;
+    /* background-color: cadetblue; */
+  /* overflow-x: hidden; */
+}
+
+section{
+    flex-grow: 1;
+    border: 1px dotted grey;
+    /* height: 300px; */
+    padding-bottom: 200px;
+}
+
+.s1{
+    background-color: chartreuse;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 50px), 0 100%);
+}
+/* .s1::before{
+    display: block;
+    content: '';
+    height: 200px;
+    background-color: chartreuse;
+    position: relative; 
+    top: 250px;
+    transform: rotate(5deg);
+    width: 150%;
+    left: -55px;
+} */
+.s2{
+    background-color: crimson;
+}
+.s3{
+    background-color: rgb(27, 68, 202);
+}

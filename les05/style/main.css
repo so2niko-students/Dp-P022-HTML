@@ -1,0 +1,30 @@
+body{
+    height: 100vh; /* vh - % of height display,  vw - % of width display*/
+    margin: 0;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;/*Выравнивание по главной оси*/
+    /* align-items: center;     */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* align-content: center; */
+}
+
+.el{
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    border: 1px dotted grey;
+    /* flex-grow: 1; */
+}
+
+.el2{
+    height: 250px;
+    /* flex-grow: 2; */
+    flex-shrink: .2;
+}
+
+.el1{
+    background-color: darkcyan;
+    /* flex-grow: 3; */
+}
