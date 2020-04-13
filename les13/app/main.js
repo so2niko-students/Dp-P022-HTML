@@ -32,7 +32,17 @@ btnUp.onclick = function(){
     scroll(0, 0);
 }
 
+setTimeout(function(){
+    square.style.width = '100px';
+    square.style.height = '100px';
+}, 3000);
+
+setInterval(function(){
+    btnUp.style.color = getRandColor();
+    btnUp.style.backgroundColor = getRandColor();
+}, 5000);
+
 
 // 
 
-scroll(0, 0);
+// scroll(0, 0);

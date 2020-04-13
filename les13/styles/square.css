@@ -3,8 +3,8 @@ html {
   }
 
 #square{
-    width: 100px;
-    height: 100px;
+    width: 0px;
+    height: 0px;
     border: 1px dotted black;
     transition: width 2s, height 2s,background-color 2s, border-radius 2s;
 }
