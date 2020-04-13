@@ -1,0 +1,27 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+#square{
+    width: 100px;
+    height: 100px;
+    border: 1px dotted black;
+    transition: width 2s, height 2s,background-color 2s, border-radius 2s;
+}
+
+.lore{
+    font-size: 33pt;
+}
+
+#btnUp{
+    border: 1px solid black;
+    padding: 15px;
+    width: 33px;
+    height: 33px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+}
