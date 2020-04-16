@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100vw;
+            }
+        .mark{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="t">Text</h3>
+  <img class="main" 
+  src="https://www.kobzarev.com/wp-content/uploads/2013/06/html5-css3.jpg">
+    <button class="delete">Delete</button>
+  <script>
+    const m = document.querySelector('.main');
+    const text = document.querySelector('.t');
+    let i = 0;
+
+    document.querySelector('.delete').addEventListener('click', function(){
+        text.classList.add('mark');
+        setTimeout(function(){
+            m.src = 'https://cdn.mansfeld.pl/wp-content/uploads/2019/04/strony-onepage-zalety-wady.jpg';
+            text.classList.remove('mark');
+            text.innerText += ' edited';
+        }, 3000);
+    });
+
+    setInterval(function(){
+        if(++i > 360){
+            i = 0;
+        }
+    
+        m.style.filter = `hue-rotate(${i}deg)`;
+    }, 100);
+  </script>
+</body>
+</html>
